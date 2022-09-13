@@ -1,7 +1,9 @@
 package com.thearchyhelios.inventorycleaner.item;
 
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -9,7 +11,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Mod.EventBusSubscriber(modid = "inventorycleaner")
 
 public class ItemLoader {
-    private static Item[] items = {
+    private static final Item[] items = {
             new Item().setUnlocalizedName("ceshifangkuai").setRegistryName("ceshifangkuai").setCreativeTab(CreativeTabs.MATERIALS)
     };
 
